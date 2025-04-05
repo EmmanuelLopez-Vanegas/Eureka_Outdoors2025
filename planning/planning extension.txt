@@ -1,0 +1,32 @@
+Linkie in the descropition:
+https://prod.liveshare.vsengsaas.visualstudio.com/join?F403DEFFEC97C7CDD811945BFA61FF3DC660
+
+# How tf are we gonna do UI 
+# We need to make it not honour system since we cant trsut that the users will do 
+
+
+
+
+Ideas:
+1. Alarm - Notification reminder to go outside every once in a while
+- making a timer to make sure that people exersice, do the activties they have to
+- ensures people build and keep up good habits, walking around, getting vitamin D, etc.
+- goal setting/rewards, as well as streaks 
+- 
+- 
+
+2. Scavenger hunt type program
+- We have a large list of outdoor items
+- We pick 3 random items from the list and give them to users to go outside and find
+- We use machine learning to verify that the images they submitted are actually what they're supposed to be
+- We have a streak system to encourage the users to keep up their daily habit of going outside
+
+3 . bereal  type app 
+- make an app that forces the user to a pictre - We have a large list of random outdoor items
+- We pick 3 random items fsers to find, daily
+- User takes pictures of these items and we use AI to verify that the images they submit are actually what they should be
+- We have a streak for each person that finds all of their items
+- This encourages t
+- Leaderboards (?)a
+
+4. 
