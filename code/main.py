@@ -3,4 +3,4 @@ import random
 import tkinter
 
 #List of outdoor items
-items = ["stop sign", "flower", "clouds", ""]
+items = ["Stop sign", "Flower", "Clouds", "Person walking their pet (with consent)", "Hiking trail sign", "A very old tree"]
