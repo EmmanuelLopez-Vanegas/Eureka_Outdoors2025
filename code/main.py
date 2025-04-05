@@ -20,16 +20,16 @@ def upload_image():
     pass
 
 #UI design
-file_upload_button = tkinter.Button(root, text="Upload", padx=5, pady=3, command=upload_image())
-file_upload_button.grid(row=1, column=0)
+file_upload_button = tkinter.Button(root, text="Upload", padx="5", pady="3", command=upload_image())
+file_upload_button.grid(row="1", column="2")
 
-Label_one = tkinter.Label(root, text="Today's items:").grid(row="4", column=1)
+Label_one = tkinter.Label(root, text="Today's items:").grid(row="4", column="1")
 
 #TODO Put 3 random items in the following text labels
 
-LabelRandom1 = tkinter.Label(root, text="item one").grid(row="5", column=1)
-LabelRandom2 = tkinter.Label(root, text="item two").grid(row="6",column=1)
-LabelRandom3 = tkinter.Label(root, text="item three").grid(row="7", column=1)
+LabelRandom1 = tkinter.Label(root, text="item one").grid(row="5", column="1")
+LabelRandom2 = tkinter.Label(root, text="item two").grid(row="6",column="1")
+LabelRandom3 = tkinter.Label(root, text="item three").grid(row="7", column="1")
 
 #looping window to allow for user interaction
 root.mainloop()
