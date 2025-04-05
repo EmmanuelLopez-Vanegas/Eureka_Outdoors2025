@@ -4,6 +4,11 @@ import tkinter
 import datetime 
 from tkinter import filedialog
 
+#random number generators for item selection
+first_item = random.randint(1,3)
+second_item = random.randint(1,3)
+third_item = random.randint(1,3)
+
 #List of outdoor items
 items = ["stop sign", "flower", "clouds"]
 
@@ -15,9 +20,9 @@ def upload_image():
     pass
 
 #UI design
-file_upload_button = tkinter.Button(root, text="+", padx=5, pady=5, command=upload_image())
+file_upload_button = tkinter.Button(root, text="Upload", padx=5, pady=3, command=upload_image())
 file_upload_button.grid(row=1, column=1, padx=18)
 
-Label_one = tkinter.Label()
+Label_one = tkinter.Label(root, text="Today's items:")
 #looping window to allow for user interaction
 root.mainloop()
