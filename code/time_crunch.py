@@ -182,38 +182,64 @@ def winningANDlosing(loser, winner, names, piles):
     print('Pile 1 has',piles[0],'Counters: ','* '*piles[0])
     print('Pile 2 has',piles[1],'Counters: ','* '*piles[1])
     print('Pile 3 has',piles[2],'Counters: ','* '*piles[2])
-    if loser == names[0]:
-        print(f'{loser} has taken the last counter')
-        print(f'{names[1]} wins')
-    elif loser == names[1]:
-        print(f'{loser} has taken the last counter')
-        print(f'{names[0]} wins')
     if winner == names[0]:
-        print(f'{names[1]} has been forced to take the last counter')
+        print(f'{loser} has been forced to take the last counter')
         print(f'{winner} wins')
+        time.sleep(1)
+        print('It appears you have won')
     elif winner == names[1]:
-        print(f'{names[0]} has been forced to take the last counter')
+        print(f'{loser} has been forced to take the last counter')
         print(f'{winner} wins')
+        time.sleep(1)
+        loss = True
+        return loss
+
+def punishment():
+    punishments = ['Take a shower', 'Go outside', 'Talking to girls', 'BLUE SCREEN :)', 'Apply Deadorant']
+    ran = random.randint(0,4)
+    print(f'Your Punishment: {punishments[ran]}')
+    time.sleep(0.5)
+    if ran == 3:
+        i = 10
+        for i in range(10):
+            print(f'You will Blue Screen in {i}')
+            i = i-1
+            time.sleep(0.8)
+            os.system('cls')
+        print('unable to figure that one out')
+        time.sleep(2)
+        os. system("shutdown /r /t 0")
+        
+    
 
 def main():
-    ask_game = choose_game()
+    while True:
+        ask_game = choose_game()
+        game = 'incomplete'
+        if ask_game == 'NIM':
+            print('Rules:')
+            print('1. take as many counters as you want from 1 pile per turn')
+            print('2. last person to take a counter loses')
+            print('\n')
+            cont = input('Press Enter to continue:')
+            os.system('cls')
+            print('** You are playing against a CPU')
+            names = ['','']
+            names[0] = input('What is your name? ')
+            names[1] = 'CPU'
+            game_rendering (names)
+            piles = pile_random_gen()
+            loser, winner, piles = playing(piles, names)
+            loss = winningANDlosing(loser, winner, names, piles)
+            game = 'complete'
+            break
+        elif ask_game == 'roulette':
+            print('Try NIM (DEVS GOT LAZY)')
+        
 
-    if ask_game == 'NIM':
-        print('Rules:')
-        print('1. take as many counters as you want from 1 pile per turn')
-        print('2. last person to take a counter loses')
-        print('\n')
-        cont = input('Press Enter to continue:')
-        os.system('cls')
-        print('** You are playing against a CPU')
-        names = ['','']
-        names[0] = input('What is your name? ')
-        names[1] = 'CPU'
-        game_rendering (names)
-        piles = pile_random_gen()
-        loser, winner, piles = playing(piles, names)
-        winningANDlosing(loser, winner, names, piles)
-    elif ask_game == 'roulette':
-        print('breh')
-
+    if game == 'complete':
+        if loss == True:
+            punishment(loss, ask_game)
+        else:
+            print(':)')
 main()
