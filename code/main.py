@@ -24,5 +24,12 @@ file_upload_button = tkinter.Button(root, text="Upload", padx=5, pady=3, command
 file_upload_button.grid(row=1, column=1, padx=18)
 
 Label_one = tkinter.Label(root, text="Today's items:")
+
+#TODO Put 3 random items in the following text labels
+
+LabelRandom1 = tkinter.Label(root, text="")
+LabelRandom2 = tkinter.Label(root, text="")
+LabelRandom3 = tkinter.Label(root, text="")
+
 #looping window to allow for user interaction
 root.mainloop()
