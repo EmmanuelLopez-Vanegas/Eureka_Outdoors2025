@@ -1,5 +1,5 @@
 Linkie in the descropition:
-https://prod.liveshare.vsengsaas.visualstudio.com/join?157D0515B33F2351D9B8245E51A504C894D3
+https://prod.liveshare.vsengsaas.visualstudio.com/join?4489B51C47449CEF2941F84FEB370520FC5F
 
 Ideas:
 1. Alarm - Notification reminder to go outside every once in a while
@@ -9,4 +9,3 @@ Ideas:
 - streak system to encourage people to keep up their good habits, just like duolingo
 - 
 - 
-
